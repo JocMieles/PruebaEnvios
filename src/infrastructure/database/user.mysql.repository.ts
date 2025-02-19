@@ -1,8 +1,9 @@
-import { IUserRepository } from "../../domain/interfaces/IUserRepository";
 import { User } from "../../domain/entities/user.entity";
+import { IUserRepository } from "../../domain/repositories/user.repository";
 import pool from "./mysql.config";
 
 export class UserMySQLRepository implements IUserRepository {
+
   async create(user: User): Promise<User> {
     const connection = await pool.getConnection();
     try {

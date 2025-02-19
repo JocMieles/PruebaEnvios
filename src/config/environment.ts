@@ -12,4 +12,6 @@ export const config = {
   JWT_SECRET: process.env.JWT_SECRET || "supersecret",
   REDIS_HOST: process.env.REDIS_HOST || "127.0.0.1",
   REDIS_PORT: process.env.REDIS_PORT || "6379",
+  GOOGLE_MAPS_API_KEY: process.env.GOOGLE_MAPS_API_KEY || "AIzaSyBujZp9mOoVzuY3Chjk06Un9hrf1Terg3k",
+  REDIS_URL: process.env.REDIS_URL || "redis://127.0.0.1:6379",
 };

@@ -1,5 +1,5 @@
 import { User } from "../../domain/entities/user.entity";
-import { IUserRepository } from "../../domain/interfaces/IUserRepository";
+import { IUserRepository } from "../../domain/repositories/user.repository";
 import bcrypt from "bcryptjs";
 import { randomUUID } from "crypto";
 

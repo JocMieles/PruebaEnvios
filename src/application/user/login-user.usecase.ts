@@ -1,7 +1,7 @@
-import { IUserRepository } from "../../domain/interfaces/IUserRepository";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import { config } from "../../config/environment";
+import { IUserRepository } from "../../domain/repositories/user.repository";
 
 export class LoginUserUseCase {
   constructor(private userRepository: IUserRepository) {}
